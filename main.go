@@ -1,13 +1,10 @@
 package main
 
-import "net/http"
+import "mycep/pkg/web"
 
 func main() {
+	println("Start mycep")
 
-	http.HandleFunc("/cep", func(w http.ResponseWriter, r *http.Request) {
-		w.Write([]byte("Your Cep is"))
-	})
-
-	http.ListenAndServe(":8080", nil)
-
+	// Start the server
+	web.StartWebServer()
 }
