@@ -1,0 +1,9 @@
+POST http://localhost:8080/cep
+Content-Type: application/json
+
+{
+  "cep": "01001000"
+}
+###
+
+GET http://localhost:8080/cep?id=01001000
